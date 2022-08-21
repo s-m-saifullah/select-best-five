@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Your Team of Five</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body></body>
+  <body class="bg-neutral-600">
+    <!-- Banner Starts -->
+    <header class="mb-14">
+      <div
+        class="hero hero-banner"
+        style="background-image: url(images/banner.png)"
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-lg">
+            <h1 class="mb-5 text-5xl font-bold">Form Your Team of Five</h1>
+            <p class="mb-5">
+              Form your dream team and track their progress realtime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="w-11/12 mx-auto">
+          <div class="grid grid-cols-4 gap-5">
+            <div class="col-span-3">
+              <div class="grid grid-cols-3 gap-5">
+                <!-- player 1 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure>
+                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions block">
+                      <button
+                        disabled
+                        class="btn btn-primary w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

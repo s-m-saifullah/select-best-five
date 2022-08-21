@@ -1,0 +1,15 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.hero-banner {
+  min-height: 480px;
+}
+
+.hero-banner h1 {
+  font-family: "Berkshire Swash", cursive;
+}
+
+button[disabled] {
+  color: white !important;
+}
