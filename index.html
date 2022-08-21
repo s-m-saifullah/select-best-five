@@ -38,9 +38,10 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="w-11/12 mx-auto">
+      <section class="pb-24">
+        <div class="w-5/6 mx-auto">
           <div class="grid grid-cols-4 gap-5">
+            <!-- Player Cards -->
             <div class="col-span-3">
               <div class="grid grid-cols-3 gap-5">
                 <!-- player 1 -->
@@ -63,6 +64,198 @@
                         Select
                       </button>
                     </div>
+                  </div>
+                </div>
+
+                <!-- player 2 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Tamim Iqbal
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 3 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Mahamudullah
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 4 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Mehedi Miraz
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 5 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Taijul Islam
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 6 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Anamul Hoq
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calculation Section -->
+            <div class="col-span-1 text-white">
+              <!-- Chosen V Section -->
+              <div class="chosen-5 bg-zinc-900 p-5 mb-6">
+                <h3 class="text-xl font-semibold text-center mb-5">
+                  Chosen - V
+                </h3>
+                <ul id="chosen-player">
+                  <li class="mb-5">
+                    <span>1. </span><span>Shakib Al Hasan</span>
+                  </li>
+                  <li class="mb-5">
+                    <span>2. </span><span>Shakib Al Hasan</span>
+                  </li>
+                  <li class="mb-5">
+                    <span>3. </span><span>Shakib Al Hasan</span>
+                  </li>
+                  <li class="mb-5">
+                    <span>4. </span><span>Shakib Al Hasan</span>
+                  </li>
+                  <li class="mb-5">
+                    <span>5. </span><span>Shakib Al Hasan</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Budget Section -->
+              <div class="chosen-5 bg-zinc-900 p-5">
+                <h3 class="text-xl font-semibold text-center mb-5">Budget</h3>
+                <div
+                  class="per-player-cost flex flex-wrap justify-between items-center gap-y-4 mb-3"
+                >
+                  <p class="inline-block w-1/2">Per Player</p>
+                  <input
+                    class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
+                    type="text"
+                    value="1000"
+                  />
+                  <button
+                    class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none mb-5"
+                  >
+                    Calculate
+                  </button>
+                  <p>
+                    Player Expenses &nbsp;&nbsp;&nbsp;&nbsp; $<span>5000</span>
+                  </p>
+                </div>
+
+                <!-- Manager, Coach Cost -->
+                <div
+                  class="staff-cost flex flex-wrap justify-between items-center gap-y-4"
+                >
+                  <p class="inline-block w-1/2">Manager</p>
+                  <input
+                    class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
+                    type="text"
+                    value="2000"
+                  />
+                  <p class="inline-block w-1/2">Coach</p>
+                  <input
+                    class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
+                    type="text"
+                    value="2000"
+                  />
+                  <button
+                    class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none mb-5"
+                  >
+                    Calculate Total
+                  </button>
+                  <div class="w-full flex justify-between">
+                    <p>Total</p>
+                    <p class="text-orange-600">$<span>11000</span></p>
                   </div>
                 </div>
               </div>
