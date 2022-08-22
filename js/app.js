@@ -52,11 +52,8 @@ document
     calculateExpense();
     const expenseTotalPlayer = getElementTextById("player-total-expense");
 
-    if (isNaN(expenseManager)) {
-      alert("Please Enter a Valid Amount For Manager");
-      return;
-    } else if (isNaN(expenseCoach)) {
-      alert("Please Enter a Valid Amount For Coach");
+    if (isNaN(expenseManager) || isNaN(expenseCoach)) {
+      alert("Please Enter a Valid Amount For Manager or Coach");
       return;
     } else {
       const expenseTotal = expenseTotalPlayer + expenseManager + expenseCoach;
