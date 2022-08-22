@@ -27,7 +27,8 @@
         style="background-image: url(images/banner.png)"
       >
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
+        <!-- Banner Content -->
+        <div class="hero-content text-center text-neutral-content mt-24">
           <div class="max-w-lg">
             <h1 class="mb-5 text-5xl font-bold">Form Your Team of Five</h1>
             <p class="mb-5">
@@ -37,6 +38,8 @@
         </div>
       </div>
     </header>
+    <!-- Banner Ends -->
+    <!-- Main Starts -->
     <main>
       <section class="pb-24">
         <div class="w-5/6 mx-auto">
@@ -73,7 +76,7 @@
                   class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
                 >
                   <figure class="h-52">
-                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                    <img class="w-full" src="images/tamim.png" alt="Shoes" />
                   </figure>
                   <div class="card-body">
                     <h2
@@ -97,7 +100,11 @@
                   class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
                 >
                   <figure class="h-52">
-                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                    <img
+                      class="w-full"
+                      src="images/mahamudullah.png"
+                      alt="Shoes"
+                    />
                   </figure>
                   <div class="card-body">
                     <h2
@@ -121,7 +128,7 @@
                   class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
                 >
                   <figure class="h-52">
-                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                    <img class="w-full" src="images/miraj.png" alt="Shoes" />
                   </figure>
                   <div class="card-body">
                     <h2
@@ -145,7 +152,7 @@
                   class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
                 >
                   <figure class="h-52">
-                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                    <img class="w-full" src="images/taijul.png" alt="Shoes" />
                   </figure>
                   <div class="card-body">
                     <h2
@@ -169,13 +176,85 @@
                   class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
                 >
                   <figure class="h-52">
-                    <img class="w-full" src="images/shakib.png" alt="Shoes" />
+                    <img class="w-full" src="images/taskin.png" alt="Shoes" />
                   </figure>
                   <div class="card-body">
                     <h2
                       class="card-title block font-extrabold text-center mb-5"
                     >
-                      Anamul Hoq
+                      Taskin Ahmed
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        onclick="addToChosenV(this)"
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 7 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/mushfiq.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Mushfiqur Rahim
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        onclick="addToChosenV(this)"
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 8 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/mustafiz.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Mustafiz
+                    </h2>
+                    <div class="card-actions block">
+                      <button
+                        onclick="addToChosenV(this)"
+                        class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none"
+                      >
+                        Select
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- player 9 -->
+                <div
+                  class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
+                >
+                  <figure class="h-52">
+                    <img class="w-full" src="images/liton.png" alt="Shoes" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title block font-extrabold text-center mb-5"
+                    >
+                      Liton Das
                     </h2>
                     <div class="card-actions block">
                       <button
@@ -197,7 +276,7 @@
                 <h3 class="text-xl font-semibold text-center mb-5">
                   Chosen - V
                 </h3>
-                <ul id="chosen-player"></ul>
+                <ol id="chosen-player"></ol>
               </div>
 
               <!-- Budget Section -->
@@ -208,18 +287,21 @@
                 >
                   <p class="inline-block w-1/2">Per Player</p>
                   <input
+                    id="per-player-cost"
                     class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
                     type="text"
                     value="1000"
                   />
                   <button
+                    id="calculate-player-expense"
                     class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none mb-5"
                   >
                     Calculate
                   </button>
-                  <p>
-                    Player Expenses &nbsp;&nbsp;&nbsp;&nbsp; $<span>5000</span>
-                  </p>
+                  <div class="w-full flex justify-between">
+                    <p>Total</p>
+                    <p>$<span id="player-total-expense">0</span></p>
+                  </div>
                 </div>
 
                 <!-- Manager, Coach Cost -->
@@ -228,24 +310,29 @@
                 >
                   <p class="inline-block w-1/2">Manager</p>
                   <input
+                    id="expense-manager"
                     class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
                     type="text"
                     value="2000"
                   />
                   <p class="inline-block w-1/2">Coach</p>
                   <input
+                    id="expense-coach"
                     class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
                     type="text"
                     value="2000"
                   />
                   <button
+                    id="calculate-total-expense"
                     class="btn btn-primary bg-sky-800 min-h-8 h-10 border-0 w-full rounded-none mb-5"
                   >
                     Calculate Total
                   </button>
                   <div class="w-full flex justify-between">
                     <p>Total</p>
-                    <p class="text-orange-600">$<span>11000</span></p>
+                    <p class="text-orange-600">
+                      $<span id="expense-total" class="font-bold">0</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -254,6 +341,7 @@
         </div>
       </section>
     </main>
+    <!-- Main Ends -->
 
     <script src="js/utilities.js"></script>
     <script src="js/app.js"></script>

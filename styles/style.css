@@ -4,6 +4,7 @@ body {
 
 .hero-banner {
   min-height: 480px;
+  place-items: start center;
 }
 
 .hero-banner h1 {
