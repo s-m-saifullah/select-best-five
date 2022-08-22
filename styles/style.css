@@ -14,3 +14,7 @@ body {
 button[disabled] {
   color: white !important;
 }
+
+input::placeholder {
+  font-size: 12px;
+}

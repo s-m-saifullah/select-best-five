@@ -28,9 +28,13 @@
       >
         <div class="hero-overlay bg-opacity-60"></div>
         <!-- Banner Content -->
-        <div class="hero-content text-center text-neutral-content mt-24">
+        <div
+          class="hero-content text-center text-neutral-content mt-20 sm:mt-24"
+        >
           <div class="max-w-lg">
-            <h1 class="mb-5 text-5xl font-bold">Form Your Team of Five</h1>
+            <h1 class="mb-5 text-3xl sm:text-5xl font-bold">
+              Form Your Team of Five
+            </h1>
             <p class="mb-5">
               Form your dream team and track their progress realtime.
             </p>
@@ -43,10 +47,10 @@
     <main>
       <section class="pb-24">
         <div class="w-5/6 mx-auto">
-          <div class="grid grid-cols-4 gap-5">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
             <!-- Player Cards -->
-            <div class="col-span-3">
-              <div class="grid grid-cols-3 gap-5">
+            <div class="lg:col-span-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- player 1 -->
                 <div
                   class="card w-full bg-slate-900 text-white shadow-xl rounded-none"
@@ -270,7 +274,7 @@
             </div>
 
             <!-- Calculation Section -->
-            <div class="col-span-1 text-white">
+            <div class="lg:col-span-1 text-white">
               <!-- Chosen V Section -->
               <div class="chosen-5 bg-zinc-900 p-5 mb-6">
                 <h3 class="text-xl font-semibold text-center mb-5">
@@ -290,7 +294,8 @@
                     id="per-player-cost"
                     class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
                     type="text"
-                    value="1000"
+                    value="0"
+                    placeholder="Enter Player Cost"
                   />
                   <button
                     id="calculate-player-expense"
@@ -313,14 +318,16 @@
                     id="expense-manager"
                     class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
                     type="text"
-                    value="2000"
+                    value="0"
+                    placeholder="Enter Manager Cost"
                   />
                   <p class="inline-block w-1/2">Coach</p>
                   <input
                     id="expense-coach"
                     class="bg-zinc-900 border-[1px] border-white w-1/2 p-1"
                     type="text"
-                    value="2000"
+                    value="0"
+                    placeholder="Enter Coach Cost"
                   />
                   <button
                     id="calculate-total-expense"
