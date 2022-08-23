@@ -1,3 +1,4 @@
+// Function for getting values from inputs as number
 function getElementValueById(elementId) {
   const element = document.getElementById(elementId);
   const elementString = element.value;
@@ -6,6 +7,7 @@ function getElementValueById(elementId) {
   return elementValue;
 }
 
+// Function for getting inner text from elements as number
 function getElementTextById(elementId) {
   const element = document.getElementById(elementId);
   const elementString = element.innerText;
@@ -14,12 +16,7 @@ function getElementTextById(elementId) {
   return elementText;
 }
 
-function setValueById(elementId, newValue) {
-  const element = document.getElementById(elementId);
-
-  element.value = newValue;
-}
-
+// Setting new text in elements
 function setTextById(elementId, newText) {
   const element = document.getElementById(elementId);
 
