@@ -38,8 +38,8 @@ function calculateExpense() {
   const expensePerPlayer = getElementValueById("per-player-cost");
 
   // Error handling for non number inputs
-  if (isNaN(expensePerPlayer)) {
-    alert("Please Enter a Valid Amount For Each Player");
+  if (isNaN(expensePerPlayer) || expensePerPlayer < 0) {
+    alert("Please Enter a Valid Positive Amount For Each Player");
     return;
   } else {
     // Claculating and showing total expense for players
@@ -63,8 +63,13 @@ document
     const expenseTotalPlayer = getElementTextById("player-total-expense");
 
     // Error handling code for non number inputs
-    if (isNaN(expenseManager) || isNaN(expenseCoach)) {
-      alert("Please Enter a Valid Amount For Manager or Coach");
+    if (
+      isNaN(expenseManager) ||
+      isNaN(expenseCoach) ||
+      expenseManager < 0 ||
+      expenseManager < 0
+    ) {
+      alert("Please Enter a Valid Positive Amount For Manager or Coach");
       return;
     } else {
       // Calculating and showing total expenses
